@@ -238,11 +238,10 @@
       "skills": [
         "Frontend",
         "HTML",
-        "HAML",
         "React",
+        "Vue",
         "Next.js",
-        "CSS",
-        "SASS",
+        "Tailwind",
         "Javascript",
         "Rails",
         "Ruby"
