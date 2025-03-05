@@ -1,0 +1,354 @@
+{
+  "people": [
+    {
+      "name": "Michiel van der Ros",
+      "bio": "Creative developer that loves clean code, ES6 and React. Specialized in serious games, interactive story telling and 360° panoramas, all in HTML5, JavaScript in CSS. Working experience includes web applications, frontend training/workshops, research & development and many high end campaigns.",
+      "skills": [
+        "React",
+        "JSX",
+        "HTML5",
+        "JavaScript",
+        "Workshops",
+        "Training",
+        "Google Maps API",
+        "Sass (css)",
+        "Jasmine",
+        "IntelliJ"
+      ],
+      "portfolio": "http://xny.nl",
+      "linkedin": "http://www.linkedin.com/in/micros",
+      "twitter": "http://twitter.com/micros",
+      "email": "michiel@xny.nl",
+      "phone": "06 4136 3670",
+      "alumni": true
+    },
+    {
+      "name": "Marco Alting",
+      "bio": "Creative Realtime 3D and VR/AR developer with a passion for game design and development using Unreal Engine, C++ and Blueprints. Also still doing projects as a senior frontend developer. Playing a lot of tennis in my spare time and occasionally singing and playing guitar.",
+      "skills": [
+        "HTML5",
+        "Javascript",
+        "SASS",
+        "Backbone",
+        "React",
+        "MVC"
+      ],
+      "portfolio": "http://www.alting-multimedia.nl",
+      "linkedin": "http://nl.linkedin.com/in/marcoalting",
+      "twitter": "http://twitter.com/mrmastermindnl",
+      "email": "marco@alting-multimedia.nl",
+      "phone": "06-51176037"
+    },
+    {
+      "name": "Paul Jones",
+      "bio": "Front end Developer with 8 years experience in high traffic systems and APIs, Google DFP and IMA SDK, games and more. Long time Actionscript programmer with a developing taste for AngularJS.",
+      "skills": [
+        "Actionscript 3",
+        "AngularJS",
+        "Javascript",
+        "Games",
+        "Google DFP",
+        "jQuery"
+      ],
+      "portfolio": "http://www.paulwjones.com",
+      "linkedin": "https://www.linkedin.com/pub/paul-jones/1a/607/265",
+      "twitter": null,
+      "email": "thepauljones@gmail.com",
+      "phone": "+31 68 4161914"
+    },
+    {
+      "name": "Patrick Pietens",
+      "bio": "Creative frontend coder, game designer, audiojunkie, pro-gamer, programmer, Mac zealot, creative coder, movie addict, Nintendo fanboy, longboarder, computerfreak, snowboarder, Counterstrike player, open source supporter and indie rock listener.",
+      "skills": [
+        "HTML5, CSS3 & JavaScript (jQuery, AngularJS, Backbone.js, Wordpress, Node.js). Native iPhone and iPad development (Objective-C). And Actionscript3, Adobe Air and Flash (RobotLegs, PureMVC)"
+      ],
+      "portfolio": "http://patrickpietens.com",
+      "linkedin": "http://www.linkedin.com/in/patrickpietens",
+      "twitter": "http://twitter.com/#!/flashaddict",
+      "email": "hello@patrickpietens.com",
+      "phone": null
+    },
+    {
+      "name": "Paul Tondeur",
+      "bio": "Experienced and passionate frontend developer who creates remarkable creative experiences using the latest web technologies while applying high coding standards.\n\nBooks: Papervision3D Essentials",
+      "skills": [
+        "Frontend",
+        "Backbone.js",
+        "Angular.js",
+        "Ember.js",
+        "Node.js",
+        "GSAP",
+        "JavaScript",
+        "SASS",
+        "HTML5",
+        "CSS3",
+        "RobotLegs",
+        "Papervision3D",
+        "Unity"
+      ],
+      "portfolio": "http://www.paultondeur.com",
+      "linkedin": "http://nl.linkedin.com/in/paultondeur",
+      "twitter": "http://twitter.com/PaulTondeur",
+      "email": "paul@paultondeur.nl",
+      "phone": "+31 6 24 25 58 62"
+    },
+    {
+      "name": "Daan Heuvingh",
+      "bio": "A creative all-round developer with a strong background in game-design and clean code. Loves working on creative game or multimedia projects with teams of highly motivated professionals.",
+      "skills": [
+        "Javascript: ReactJS",
+        "ThreeJS etc. CSS",
+        "SCSS",
+        "ES6",
+        "HTML5",
+        "PHP",
+        "Java",
+        "Project management",
+        "Interaction and game design"
+      ],
+      "portfolio": "https://daanheuvingh.com",
+      "linkedin": "linkedin.com/in/daan-heuvingh-200a9a3/",
+      "twitter": null,
+      "email": "daanheuvingh@gmail.com",
+      "phone": "+31 64 212 0021"
+    },
+    {
+      "name": "Erik van Nieuwburg",
+      "bio": "15 years of front-end experience, started out with media-rich Flash applications and ending in JavaScript. I've been mostly hired for my knack for the soft skills of technology, like leading teams, training juniors and changing organisations to become more productive. Along this path, I've been trained to coach individuals and organizations in professional communication and productivity.",
+      "skills": [
+        "Coaching / HTML / SASS / Javascript / TDD / Backbone / Angular / Actionscript / Uncle Bob's Clean Code / Design Patterns / MVC"
+      ],
+      "portfolio": "http://www.rumblingskies.com",
+      "linkedin": "http://nl.linkedin.com/in/erikvannieuwburg",
+      "twitter": "http://twitter.com/#!/rumblingskies",
+      "email": "erik@rumblingskies.com",
+      "phone": "+31 6 42 27 48 21",
+      "alumni": true
+    },
+    {
+      "name": "Berend Weij",
+      "bio": "Cross-functional expertise: project management, Usability/Interaction Design & Development for (educational) games, websites and other (interactive) media. Professional developer since 2000. Previously Founder/Technical Director Mijn naam is Haas. Currently owner Studio Zoetekauw.",
+      "skills": [
+        "Serious Games",
+        "Teaching/coaching/workshops",
+        "(Agile) project/people management",
+        "Scrum master",
+        "Full-stack JS",
+        "Unity/C#/Shaders",
+        "(progressive) web/hybrid apps",
+        "Interaction Design"
+      ],
+      "portfolio": "http://www.studiozoetekauw.nl/",
+      "linkedin": "https://nl.linkedin.com/in/experiencedesigner",
+      "twitter": null,
+      "email": "berend@studiozoetekauw.nl",
+      "phone": "+31 6 14 44 89 73"
+    },
+    {
+      "name": "Laurent van Dommelen",
+      "bio": "I am a creative coder with a background in interaction design and advertising-driven web applications. Since early 2010 I run a small studio together with the king of design town, Jannes Glas. I try to not limit myself to one technology or platform, but the keywords in any of my products will be interactive, visual and experience. I get my kick out of coming up with creative solutions to complex problems, making it look all simple and sexy in the end.",
+      "skills": [
+        "PHP",
+        "Laravel",
+        "Vagrant",
+        "Wordpress",
+        "Javascript",
+        "ES6",
+        "React.js",
+        "Backbone.js",
+        "HTML(5)",
+        "CSS3",
+        "SCSS",
+        "Webpack"
+      ],
+      "portfolio": "http://studiosugarfree.com/",
+      "linkedin": "http://nl.linkedin.com/pub/laurent-van-dommelen/8/33/25a",
+      "twitter": "http://twitter.com/#!/DerLola",
+      "email": null,
+      "phone": "+31 6 160 140 33",
+      "alumni": true
+    },
+    {
+      "name": "Stefan Hendriks",
+      "bio": "Agile Software Developer with a passion for clean and well tested code. Most comfortable with backend but also has frontend experience. Scrum Master. Chasing his dream to create the best Developer training on this world.",
+      "skills": [
+        "Ruby",
+        "Java",
+        "Javascript",
+        "HTML",
+        "CSS (SASS)",
+        "Spring",
+        "Hibernate",
+        "Tomcat",
+        "Continuous Integration & Development",
+        "Coderetreat organisator & Facilitator"
+      ],
+      "portfolio": "https://github.com/stefanhendriks",
+      "linkedin": "http://www.linkedin.com/in/stefanhendriks",
+      "twitter": "https://twitter.com/stefanhendriks",
+      "email": "stefan@fundynamic.com",
+      "phone": "+31 6 24 107 184",
+      "alumni": true
+    },
+    {
+      "name": "Mathijs Baaij",
+      "bio": "As a Frontend developer and as tech lead I worked on large scale websites, campaign websites, web apps and mobile apps. I enjoy working on interesting projects within a team of enthousiasts.",
+      "skills": [
+        "Javascript",
+        "HTML",
+        "CSS",
+        "React",
+        "Redux",
+        "React Native",
+        "GraphQL",
+        "Webpack",
+        "Scrum",
+        "Kanban",
+        "Soft skills"
+      ],
+      "portfolio": "http://www.mathijsbaaij.nl/",
+      "linkedin": "http://www.linkedin.com/in/mathijsbaaij",
+      "twitter": null,
+      "email": "info@mathijsbaaij.nl",
+      "phone": "+31 (0)6 1787 6700"
+    },
+    {
+      "name": "Daniël Zwijnenburg",
+      "bio": "Strong focus on agile, collaboration and communication. Passionate about clean code, test driven development, ruby, rails and javascript.",
+      "skills": [
+        "Ruby",
+        "Rails",
+        "Elixir",
+        "Phoenix",
+        "Javascript",
+        "TDD",
+        "Clean Code",
+        "Continuous Integration & Deployment",
+        "AWS"
+      ],
+      "portfolio": "http://www.danielzwijnenburg.nl",
+      "linkedin": "http://nl.linkedin.com/in/danielzwijnenburg",
+      "twitter": "http://www.twitter.com/DNLZW",
+      "email": "samenwerken@danielzwijnenburg.nl",
+      "phone": "+31 6 34 45 28 58"
+    },
+    {
+      "name": "Jankees van Woezik",
+      "bio": "A code cracking, mathematics loving, award winning freelance developer; frontend and backend developer, with a passion for well written, maintainable and tested code.",
+      "skills": [
+        "Frontend",
+        "HTML",
+        "HAML",
+        "React",
+        "Next.js",
+        "CSS",
+        "SASS",
+        "Javascript",
+        "Rails",
+        "Ruby"
+      ],
+      "portfolio": "http://jankeesvw.com/",
+      "linkedin": "http://nl.linkedin.com/in/jankeesvanwoezik",
+      "twitter": "http://twitter.com/jankeesvw",
+      "email": "mail@jankeesvw.com",
+      "phone": "+31 6 449 240 83"
+    },
+    {
+      "name": "Patrick Brouwer",
+      "bio": "I'm an experienced and passionate creative developer, with a special love for frontend development! Following up with the latest trends and technology. Founder of Spirit (animation tooling for the web).",
+      "skills": [
+        "HTML5",
+        "CSS3 & Javascript",
+        "Docker",
+        "TDD",
+        "ES6",
+        "PostCSS",
+        "Node.js",
+        "Webpack",
+        "Rollup",
+        "React.js",
+        "Redux.js",
+        "Backbone.js",
+        "WebGL",
+        "GSAP"
+      ],
+      "portfolio": "https://www.inlet.nl",
+      "linkedin": "http://nl.linkedin.com/in/pbrouwer",
+      "twitter": "http://twitter.com/patrickbrouwer",
+      "email": "patrick@inlet.nl",
+      "phone": "+31 6 241 671 58"
+    },
+    {
+      "name": "Michiel van der Plas",
+      "bio": "Experienced creative frontend developer with a background in UX and Design and a love for clean code, animation and performance. Working experience includes campaign websites, microsites, big builds and mobile applications.",
+      "skills": [
+        "HTML5",
+        "SASS/CSS",
+        "Javascript",
+        "React.js",
+        "Vue.js",
+        "Backbone.js",
+        "Webpack",
+        "Wordpress",
+        "Docker",
+        "Git"
+      ],
+      "portfolio": null,
+      "linkedin": "https://www.linkedin.com/in/michielvanderplas/",
+      "twitter": null,
+      "email": "m@plasmic.nl",
+      "phone": "+31 6 427 467 21"
+    },
+    {
+      "name": "Sander Nieuwenhuizen",
+      "bio": "My goal is to make you succeed with your venture. I have a broad interest and skillset being a founder, visionary, strategist, product owner, programmer, coach and trainer. I’m especially driven to help you setting and executing the goals that are aligned with your vision. Having trouble what your vision is? No problem, helping you to a crystal clear vision and strategy is my priority #1.",
+      "skills": [
+        "Vision",
+        "Strategy",
+        "Coaching",
+        "Product Ownership",
+        "CTO",
+        "CPO"
+      ],
+      "portfolio": "https://www.linkedin.com/in/sandernieuwenhuizen",
+      "linkedin": "https://www.linkedin.com/in/sandernieuwenhuizen",
+      "twitter": "https://twitter.com/munkius",
+      "email": "sander@sandernieuwenhuizen.nl",
+      "phone": null
+    },
+    {
+      "name": "Hugo Dechesne",
+      "bio": "",
+      "skills": [
+        "Frontend: HTML5, Javascript, SASS/CSS, WebGL",
+        "Backend: PHP, WordPress, Bolt.cms",
+        "Other: Project Management, UX/UI Design"
+      ],
+      "portfolio": "http://www.hugodechesne.com",
+      "linkedin": "https://www.linkedin.com/in/hugodechesne",
+      "twitter": "https://twitter.com/dechesne",
+      "email": "hello@hugodechesne.com",
+      "phone": "+31 6 11 41 55 18",
+      "alumni": true
+    },
+    {
+      "name": "Sander Schuurman",
+      "bio": "Freelance creative developer who loves: - Design - Intuitive Interfaces - Games - Music / Sound / Animation / Interaction intertwining. Sparetime electronic musician and photographer",
+      "skills": [
+        "AngularJS",
+        "BackboneJS",
+        "3D",
+        "iOS / obj-C",
+        "Audio DSP",
+        "Concepts",
+        "Design Patterns"
+      ],
+      "portfolio": "http://www.sentoplene.com/",
+      "linkedin": "http://www.linkedin.com/in/sentoplene",
+      "twitter": "http://twitter.com/sentoplene",
+      "email": "sander@sentoplene.com",
+      "phone": "+31 6 4833 5691",
+      "alumni": true
+    }
+  ]
+}
