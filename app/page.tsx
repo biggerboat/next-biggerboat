@@ -7,7 +7,6 @@ import Lighthouse from './components/Lighthouse'
 import FishContainer from './components/FishContainer'
 import Button from './components/Button'
 import BoatieList from './components/BoatieList'
-import { Metadata } from 'next'
 
 export default function Home() {
   return (
@@ -26,7 +25,7 @@ export default function Home() {
           <h1 className="sr-only">Biggerboat - Independent developers</h1>
           <p>We are a group of independent web developers, software engineers, technical consultants, creative coders, enthousiasts, individuals, friends and we are good company.</p>
           <p><strong>You have the need for a bigger boat?</strong></p>
-          <p>We're just a call away.</p>
+          <p>We&apos;re just a call away.</p>
           <Button url="/contact" label="Contact us" />
         </div>
         <div className="relative h-[700px] animate-float pointer-events-none">

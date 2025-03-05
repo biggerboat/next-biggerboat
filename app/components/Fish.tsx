@@ -1,7 +1,7 @@
 "use client"
 
-import Image from 'next/image'
 import { useEffect, useState, useRef } from 'react'
+import Image from 'next/image'
 
 type Direction = 'left' | 'right'
 
@@ -64,9 +64,11 @@ export default function Fish({ baseImagePath, speed = 0.1, delay = 0, yPosition 
       transform: `translate(${position}px, ${verticalOffset}px)`,
       transition: 'all 0.05s linear'
     }}>
-      <img
+      <Image
         src={`${baseImagePath}_${direction}.png`}
         alt="fish"
+        width={100}
+        height={50}
       />
     </div>
   )

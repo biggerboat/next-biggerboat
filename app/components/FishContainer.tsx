@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Fish from './Fish'
 
 export default function FishContainer() {
-  const [speedMultiplier, setSpeedMultiplier] = useState(1)
+  const [speedMultiplier] = useState(1)
 
   return (
     <>
