@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { cn } from '@/lib/utils'
 
 interface LighthouseProps {
   className?: string
@@ -6,10 +7,10 @@ interface LighthouseProps {
 
 export default function Lighthouse({ className = '' }: LighthouseProps) {
   return (
-    <div className={`
-      w-[763px] h-[683px]
-      ${className}
-    `}>
+    <div className={cn(
+      'w-[763px] h-[683px]',
+      className
+    )}>
       <Image 
         src="/lighthouse.png" 
         alt="Lighthouse" 

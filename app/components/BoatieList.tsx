@@ -3,6 +3,7 @@
 import { useEffect, useState, useMemo } from "react"
 import Boatie from "./Boatie"
 import boatiesData from '@/data/boaties.json'
+import { cn } from '@/lib/utils'
 
 interface Person {
   name: string
@@ -55,7 +56,7 @@ export default function BoatieList() {
   }, [peopleWithAvailability])
   
   const renderPerson = (person: Person) => (
-    <div key={person.name} className="mb-4">
+    <div key={person.name} className={cn("mb-4")}>
       <Boatie person={person} />
     </div>
   )
@@ -70,10 +71,10 @@ export default function BoatieList() {
   const [leftUnavailable, rightUnavailable] = splitIntoColumns(unavailablePeople)
   
   return (
-    <section aria-labelledby="team-heading" className="team-section">
+    <section aria-labelledby="team-heading" className={cn("team-section")}>
       <h2 id="team-heading" className="sr-only">Our Team</h2>
       
-      <div className="md:hidden flex flex-col p-4 max-w-3xl mx-auto">
+      <div className={cn("md:hidden flex flex-col p-4 max-w-3xl mx-auto")}>
         <div aria-label="Available team members">
           {availablePeople.map(renderPerson)}
         </div>
@@ -82,12 +83,12 @@ export default function BoatieList() {
         </div>
       </div>
 
-      <div className="hidden md:grid md:grid-cols-2 gap-4 p-4 max-w-3xl mx-auto">
-        <div className="flex flex-col">
+      <div className={cn("hidden md:grid md:grid-cols-2 gap-4 p-4 max-w-3xl mx-auto")}>
+        <div className={cn("flex flex-col")}>
           {leftAvailable.map(renderPerson)}
           {leftUnavailable.map(renderPerson)}
         </div>
-        <div className="flex flex-col">
+        <div className={cn("flex flex-col")}>
           {rightAvailable.map(renderPerson)}
           {rightUnavailable.map(renderPerson)}
         </div>
