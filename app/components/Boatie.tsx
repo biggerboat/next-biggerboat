@@ -28,7 +28,7 @@ export default function Boatie({ person }: BoatieProps) {
           </div>
         )}
         <h3 className="text-2xl font-bold mb-2">{name}</h3>
-        {bio && <p className="text-sm mb-2">{bio}</p>}
+        {bio && <p className="text-sm mb-2 [&_a]:underline" dangerouslySetInnerHTML={{__html: bio}}/>}
         
         {skills && skills.length > 0 && (
           <>
