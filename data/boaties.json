@@ -146,20 +146,13 @@
     },
     {
       "name": "Laurent van Dommelen",
-      "bio": "I am a creative coder with a background in interaction design and advertising-driven web applications. Since early 2010 I run a small studio together with the king of design town, Jannes Glas. I try to not limit myself to one technology or platform, but the keywords in any of my products will be interactive, visual and experience. I get my kick out of coming up with creative solutions to complex problems, making it look all simple and sexy in the end.",
+      "bio": "I am a full stack developer specializing in Laravel and React. Since early 2010 I run a <a href=\"https://www.studiosugarfree.com/\">small studio</a> together with <a href=\"https://jannesglas.nl/\">Jannes Glas</a>. In recent years I run a SaaS called <a href=\"https://lets-book.com\">Let's Book</a>. I get my kick out of coming up with creative solutions to complex problems, making it look all simple and sexy in the end.",
       "skills": [
         "PHP",
+        "Typescript",
         "Laravel",
-        "Vagrant",
-        "Wordpress",
-        "Javascript",
-        "ES6",
-        "React.js",
-        "Backbone.js",
-        "HTML(5)",
-        "CSS3",
-        "SCSS",
-        "Webpack"
+        "React",
+        "Inertia.js"
       ],
       "portfolio": "http://studiosugarfree.com/",
       "linkedin": "http://nl.linkedin.com/pub/laurent-van-dommelen/8/33/25a",
