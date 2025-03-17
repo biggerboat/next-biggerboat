@@ -1,5 +1,6 @@
 import { InputHTMLAttributes, forwardRef } from 'react'
 import { FieldError } from 'react-hook-form'
+import { cn } from '@/lib/utils'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   error?: FieldError
@@ -22,7 +23,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           id={inputId}
-          className={`w-full p-2 border rounded ${className}`}
+          className={cn('w-full p-2 border rounded', className)}
           {...props}
         />
         {error && (

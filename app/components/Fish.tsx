@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef } from 'react'
 import Image from 'next/image'
+import { cn } from '@/lib/utils'
 
 type Direction = 'left' | 'right'
 
@@ -10,9 +11,16 @@ interface FishProps {
   speed?: number
   delay?: number
   yPosition?: number
+  className?: string
 }
 
-export default function Fish({ baseImagePath, speed = 0.1, delay = 0, yPosition = 50 }: FishProps) {
+export default function Fish({ 
+  baseImagePath, 
+  speed = 0.1, 
+  delay = 0, 
+  yPosition = 50,
+  className
+}: FishProps) {
   const [position, setPosition] = useState(-100)
   const [verticalOffset, setVerticalOffset] = useState(0)
   const [direction, setDirection] = useState<Direction>('right')
@@ -58,12 +66,15 @@ export default function Fish({ baseImagePath, speed = 0.1, delay = 0, yPosition 
   }, [direction, speed, delay])
 
   return (
-    <div style={{ 
-      position: 'absolute', 
-      top: `${yPosition}px`,
-      transform: `translate(${position}px, ${verticalOffset}px)`,
-      transition: 'all 0.05s linear'
-    }}>
+    <div 
+      className={cn(className)}
+      style={{ 
+        position: 'absolute', 
+        top: `${yPosition}px`,
+        transform: `translate(${position}px, ${verticalOffset}px)`,
+        transition: 'all 0.05s linear'
+      }}
+    >
       <Image
         src={`${baseImagePath}_${direction}.png`}
         alt="fish"

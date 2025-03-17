@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from 'react'
+import { cn } from '@/lib/utils'
 
 interface ToastProps {
   message: string
@@ -23,12 +24,19 @@ const Toast = ({ message, type = 'success', duration = 3000, onClose }: ToastPro
 
   if (!visible) return null
 
-  const bgColor = type === 'success' ? 'bg-green-500' 
-                : type === 'error' ? 'bg-red-500' 
-                : 'bg-blue-500'
+  const getBgColor = () => {
+    switch (type) {
+      case 'success': return 'bg-green-500'
+      case 'error': return 'bg-red-500'
+      default: return 'bg-blue-500'
+    }
+  }
 
   return (
-    <div className={`fixed top-5 right-5 z-50 p-4 rounded shadow-lg ${bgColor} text-white transition-opacity duration-300`}>
+    <div className={cn(
+      'fixed top-5 right-5 z-50 p-4 rounded shadow-lg text-white transition-opacity duration-300',
+      getBgColor()
+    )}>
       {message}
     </div>
   )

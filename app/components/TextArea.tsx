@@ -1,5 +1,6 @@
 import { TextareaHTMLAttributes, forwardRef } from 'react'
 import { FieldError } from 'react-hook-form'
+import { cn } from '@/lib/utils'
 
 interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   error?: FieldError
@@ -22,7 +23,7 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
         <textarea
           ref={ref}
           id={textareaId}
-          className={`w-full p-2 border rounded h-32 ${className}`}
+          className={cn('w-full p-2 border rounded h-32', className)}
           {...props}
         />
         {error && (

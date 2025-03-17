@@ -1,4 +1,5 @@
 import Button from "./Button"
+import { cn } from '@/lib/utils'
 
 interface Person {
   name: string
@@ -14,14 +15,17 @@ interface Person {
 
 interface BoatieProps {
   person: Person
+  className?: string
 }
 
-export default function Boatie({ person }: BoatieProps) {
+export default function Boatie({ person, className }: BoatieProps) {
   const { name, bio, skills, email, phone, linkedin, twitter, portfolio, available } = person
   
   return (
-    <article className="p-2">
-      <div className={`bg-white p-4 px-6 rounded-md border-black border-2 overflow-hidden shadow-md text-sm relative`}>
+    <article className={cn("p-2", className)}>
+      <div className={cn(
+        "bg-white p-4 px-6 rounded-md border-black border-2 overflow-hidden shadow-md text-sm relative"
+      )}>
         {available === false && (
           <div className="absolute -right-16 -top-3 bg-biggerboat-yellow px-12 pt-10 border border-black shadow-md transform rotate-45" aria-label="This person is currently unavailable">
             Unavailable
