@@ -2,18 +2,17 @@
   "people": [
     {
       "name": "Michiel van der Ros",
-      "bio": "Creative developer that loves clean code, ES6 and React. Specialized in serious games, interactive story telling and 360° panoramas, all in HTML5, JavaScript in CSS. Working experience includes web applications, frontend training/workshops, research & development and many high end campaigns.",
+      "bio": "Tech lead and staff engineer at TomTom. Previously specialized in serious games, online documentaries and interactive storytelling.",
       "skills": [
+        "Frontend",
+        "Backend",
+        "CI/CD",
+        "GitOps",
+        "Design Systems",
+        "Storyblok CMS",
         "React",
-        "JSX",
-        "HTML5",
-        "JavaScript",
-        "Workshops",
-        "Training",
-        "Google Maps API",
-        "Sass (css)",
-        "Jasmine",
-        "IntelliJ"
+        "TypeScript",
+        "NextJS",
       ],
       "portfolio": "http://xny.nl",
       "linkedin": "http://www.linkedin.com/in/micros",
