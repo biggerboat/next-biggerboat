@@ -69,7 +69,6 @@
     },
     {
       "name": "Paul Tondeur",
-      "name": "Paul Tondeur",
       "bio": "AI-first innovator bridging tech and usability, passionate about building products and ventures with real world impact.",
       "skills": [
         "AI development",
@@ -335,6 +334,25 @@
       "email": "sander@sentoplene.com",
       "phone": "+31 6 4833 5691",
       "alumni": true
+    },
+    {
+      "name": "Thijs Broerse",
+      "bio": "A frontend and full-stack expert with 20+ years of experience in web development and leadership. I specialize in crafting robust web applications and leading international teams to success, with a track record of contributing to many award-winning projects.",
+      "skills": [
+        "Leadership",
+        "Architecture",
+        "TypeScript",
+        "React",
+        "Vue",
+        "NextJS",
+        "Matrix",
+        "Scrum Master"
+      ],
+      "portfolio": "https://www.tyz.nl/",
+      "linkedin": "https://www.linkedin.com/in/tyz81",
+      "twitter": "https://x.com/tyz",
+      "email": "thijs@tyz.nl",
+      "phone": "+31 6 899 36 821"
     }
   ]
 }
