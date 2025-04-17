@@ -23,19 +23,24 @@
     },
     {
       "name": "Marco Alting",
-      "bio": "Creative Realtime 3D and VR/AR developer with a passion for game design and development using Unreal Engine, C++ and Blueprints. Also still doing projects as a senior frontend developer. Playing a lot of tennis in my spare time and occasionally singing and playing guitar.",
+      "bio": "Senior Creative Realtime 3D developer with a passion for game design and development using Unreal Engine, C++ and Blueprints. Also still doing projects as a senior frontend developer. Playing a lot of Padel in my spare time and occasionally singing and playing guitar.",
       "skills": [
-        "HTML5",
-        "Javascript",
-        "SASS",
-        "Backbone",
+        "AI development",
+        "Unreal Engine",
+        "C++",
+        "Blender 3D",
+        "Python",
+        "CI/CD",
+        "Frontend",
+        "Backend",
         "React",
-        "MVC"
+        "TypeScript",
+        "Senior Team Lead"
       ],
-      "portfolio": "http://www.alting-multimedia.nl",
+      "portfolio": null,
       "linkedin": "http://nl.linkedin.com/in/marcoalting",
-      "twitter": "http://twitter.com/mrmastermindnl",
-      "email": "marco@alting-multimedia.nl",
+      "twitter": null,
+      "email": "marco.alting@gmail.com",
       "phone": "06-51176037"
     },
     {
