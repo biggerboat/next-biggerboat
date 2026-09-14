@@ -114,27 +114,29 @@ img {
 .sea {
   position: relative;
   height: 700px;
+  overflow-x: clip;
   pointer-events: none;
   animation: float 5s ease-in-out infinite;
+  will-change: transform;
 }
 
 .wave {
   position: absolute;
-  width: 100%;
+  left: -96px;
+  width: calc(100% + 96px);
   height: 48px;
   background: url("/images/background-wave.png") repeat-x;
+  will-change: transform;
 }
 
 .wave-back {
-  left: 0;
   bottom: 20px;
-  animation: wave 100s linear infinite;
+  animation: wave 8s linear infinite;
 }
 
 .wave-front {
-  right: 0;
   bottom: 0;
-  animation: wave 60s linear infinite;
+  animation: wave 5s linear infinite;
 }
 
 .boat {
@@ -148,6 +150,7 @@ img {
   margin: 0 auto;
   object-fit: contain;
   animation: float 5s ease-in-out infinite;
+  will-change: transform;
 }
 
 /* Crew */
@@ -186,6 +189,7 @@ img {
   position: absolute;
   left: 0;
   transform: translateX(-100px);
+  will-change: transform;
 }
 
 .crew-list {
@@ -354,9 +358,21 @@ img {
 
 @keyframes wave {
   from {
-    background-position: 0 0;
+    transform: translateX(0);
   }
   to {
-    background-position: 100% 0;
+    transform: translateX(96px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sea,
+  .boat,
+  .wave {
+    animation: none;
+  }
+
+  .fishes {
+    display: none;
   }
 }

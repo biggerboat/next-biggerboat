@@ -33,39 +33,69 @@ const layoutCrew = () => {
   desktop.addEventListener("change", layout);
 };
 
-const swim = (fish) => {
-  const image = fish.dataset.image;
-  const speed = parseFloat(fish.dataset.speed);
-  const delay = parseInt(fish.dataset.delay, 10);
-  let x = -100;
-  let direction = "right";
-  let start = null;
+// All fish share one animation loop, which only runs while they are on screen.
+const swimFishes = () => {
+  const container = document.querySelector(".fishes");
+  if (!container) return;
 
-  const turn = (to) => {
-    direction = to;
-    fish.src = `${image}_${to}.png`;
+  const fishes = [...container.querySelectorAll(".fish")].map((element) => ({
+    element,
+    image: element.dataset.image,
+    speed: parseFloat(element.dataset.speed),
+    delay: parseInt(element.dataset.delay, 10),
+    x: -100,
+    direction: "right",
+  }));
+
+  const turn = (fish, direction) => {
+    fish.direction = direction;
+    fish.element.src = `${fish.image}_${direction}.png`;
   };
 
-  const frame = (timestamp) => {
-    if (start === null) start = timestamp;
-    const wobble = Math.sin(((timestamp - start) / 1000) * 1.5) * 15;
+  const start = performance.now();
+  let visible = true;
+  let last = null;
 
-    x += direction === "right" ? speed : -speed;
-    if (x > window.innerWidth + 100) {
-      x = window.innerWidth + 100;
-      turn("left");
-    }
-    if (x < -100) {
-      x = -100;
-      turn("right");
+  const frame = (now) => {
+    if (!visible) {
+      last = null;
+      return;
     }
 
-    fish.style.transform = `translate(${x}px, ${wobble}px)`;
+    // Speeds are in pixels per 60 fps frame, keep them the same on faster screens
+    const steps = last === null ? 1 : Math.min((now - last) / (1000 / 60), 4);
+    last = now;
+    const width = window.innerWidth;
+
+    for (const fish of fishes) {
+      const elapsed = now - start - fish.delay;
+      if (elapsed < 0) continue;
+
+      fish.x += (fish.direction === "right" ? fish.speed : -fish.speed) * steps;
+      if (fish.x > width + 100) {
+        fish.x = width + 100;
+        turn(fish, "left");
+      }
+      if (fish.x < -100) {
+        fish.x = -100;
+        turn(fish, "right");
+      }
+
+      const wobble = Math.sin((elapsed / 1000) * 1.5) * 15;
+      fish.element.style.transform = `translate3d(${fish.x}px, ${wobble}px, 0)`;
+    }
+
     requestAnimationFrame(frame);
   };
 
-  setTimeout(() => requestAnimationFrame(frame), delay);
+  new IntersectionObserver(([entry]) => {
+    const wasVisible = visible;
+    visible = entry.isIntersecting;
+    if (visible && !wasVisible) requestAnimationFrame(frame);
+  }).observe(container);
+
+  requestAnimationFrame(frame);
 };
 
 layoutCrew();
-document.querySelectorAll(".fish").forEach(swim);
+swimFishes();
