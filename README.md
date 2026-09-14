@@ -31,9 +31,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Hosting
 
-The site is hosted on [Render](https://dashboard.render.com/web/srv-cv47jertq21c73ap1tj0) (account owned by [@jankeesvw](https://github.com/jankeesvw))
+The site is a static export (`output: "export"` in `next.config.ts`) hosted on GitHub Pages at [biggerboat.nl](https://biggerboat.nl). The custom domain is set in `public/CNAME`.
 
 ## Deployment
 
-The site is deployed automatically when a push is made to the `main` branch.
+`.github/workflows/deploy.yml` builds the site and publishes the `out/` folder on every push to `main`.
 
+## Adding yourself to the crew
+
+There is no general contact form. Every crew member lists their own contact details (email, phone, LinkedIn, portfolio) in `data/boaties.json`.

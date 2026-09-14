@@ -26,7 +26,7 @@ export default function Home() {
           <p>We are a group of independent web developers, software engineers, technical consultants, creative coders, enthousiasts, individuals, friends and we are good company.</p>
           <p><strong>You have the need for a bigger boat?</strong></p>
           <p>We&apos;re just a call away.</p>
-          <Button url="/contact" label="Contact us" />
+          <Button url="#crew" label="Meet the crew" />
         </div>
         <div className="relative h-[700px] animate-float pointer-events-none">
           <Wave position="back" className="bottom-5" />
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="w-full -mt-4 pt-4 bg-[url('/background-water.png')]">
+      <section id="crew" className="w-full -mt-4 pt-4 bg-[url('/background-water.png')]">
         <div className="text-right w-full max-w-3xl mx-auto my-12">
           <Image 
             src="/the-crew.png" 
