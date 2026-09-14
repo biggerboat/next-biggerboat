@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ToastProvider } from "./context/ToastContext";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://biggerboat.nl"),
   title: "Biggerboat | Independent web developers and software engineers",
   description: "Biggerboat is a collective of independent web developers, software engineers and technical consultants. We help you with complex technical challenges.",
   keywords: "web development, software engineers, freelance, development team, technical consultants",
@@ -40,9 +40,7 @@ export default function RootLayout({
       <body
         className="antialiased bg-[url('/background-stripe.jpg')] font-droid"
       >
-        <ToastProvider>
-          {children}
-        </ToastProvider>
+        {children}
       </body>
     </html>
   );
