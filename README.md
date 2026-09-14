@@ -1,42 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bigger Boat
 
-## Getting Started
+The website of [biggerboat.nl](https://biggerboat.nl): a group of independent web developers, software engineers, technical consultants and creative coders.
 
-First, run the development server:
+## How it works
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Plain HTML, CSS and JavaScript. There is no build step and nothing to install.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- `index.html` holds the whole page, including every crew member
+- `style.css` has all the styling
+- `script.js` shuffles the crew on every visit and lets the fish swim
+- `images/` holds the artwork, the original design files live in `docs/design`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Hosting
-
-The site is a static export (`output: "export"` in `next.config.ts`) hosted on GitHub Pages at [biggerboat.nl](https://biggerboat.nl). The custom domain is set in `public/CNAME`.
-
-## Deployment
-
-`.github/workflows/deploy.yml` builds the site and publishes the `out/` folder on every push to `main`.
+To preview locally, serve the folder with any static server, for example `python3 -m http.server` and open http://localhost:8000.
 
 ## Adding yourself to the crew
 
-There is no general contact form. Every crew member lists their own contact details (email, phone, LinkedIn, portfolio) in `data/boaties.json`.
+Copy an `<article class="boatie">` block in `index.html` and fill in your own details. There is no general contact form, everyone lists their own email, phone and links. Former members get `class="boatie is-alumni"`, which adds the "Unavailable" ribbon and sorts them to the bottom.
+
+## Hosting
+
+GitHub Pages serves the `main` branch as is, so every push to `main` is live within a minute. The custom domain is set in `CNAME`.
