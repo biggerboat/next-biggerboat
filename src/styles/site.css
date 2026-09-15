@@ -418,15 +418,29 @@ main:focus {
   background: var(--paper-2);
 }
 
-/* The same textured water as under the waves, so the sea doesn't change where the waves end. */
+/* The same textured water as under the waves, drifting along with the front wave so the sea moves as one.
+   The texture is a layer that slides one 96px tile, which the browser can do without repainting. */
 .section--sea,
 .band--sea {
-  background: var(--sea) url("/images/water.png");
+  position: relative;
+  isolation: isolate;
+  overflow-x: clip;
+  background: var(--sea);
+}
+
+.section--sea::before,
+.band--sea::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 -96px;
+  z-index: -1;
+  background: url("/images/water.png");
   background-image: image-set(
     url("/images/water.avif") type("image/avif"),
     url("/images/water.webp") type("image/webp"),
     url("/images/water.png") type("image/png")
   );
+  animation: wave 5s linear infinite;
 }
 
 .section--deep {
