@@ -219,8 +219,17 @@ main:focus {
   font-weight: 700;
 }
 
-.link-arrow::after {
-  content: " →";
+.link-arrow::after,
+.area__title a::after {
+  content: "→";
+  display: inline-block;
+  margin-left: 0.3em;
+  transition: translate 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.link-arrow:hover::after,
+.area__title a:hover::after {
+  translate: 0.3em 0;
 }
 
 .eyebrow {
@@ -335,16 +344,30 @@ main:focus {
 }
 
 .site-nav a {
+  position: relative;
   display: inline-block;
   padding-block: 0.35rem;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 3px solid transparent;
 }
 
-.site-nav a:hover,
-.site-nav a[aria-current] {
-  border-color: var(--yellow);
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: var(--yellow);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.6, 0, 0.2, 1);
+}
+
+.site-nav a:hover::after,
+.site-nav a[aria-current]::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .lang-switch {
@@ -524,6 +547,9 @@ main:focus {
   bottom: 0.6rem;
   right: max(var(--gutter), 8%);
   width: clamp(9rem, 26vw, 22rem);
+}
+
+.sea__boat img {
   animation: float 5s ease-in-out infinite;
 }
 
@@ -584,6 +610,7 @@ main:focus {
 }
 
 .stats dd {
+  font-variant-numeric: tabular-nums;
   font-family: var(--font-display);
   font-size: clamp(2.75rem, 5vw + 1rem, 5rem);
   font-weight: 900;
@@ -674,6 +701,7 @@ main:focus {
 
 .problems {
   position: relative;
+  container-type: inline-size;
 }
 
 .problems__list {
@@ -762,11 +790,6 @@ main:focus {
   text-decoration: none;
   background: linear-gradient(var(--yellow), var(--yellow)) 0 88% / 0 0.3em no-repeat;
   transition: background-size 0.25s ease;
-}
-
-.area__title a::after {
-  content: " →";
-  font-weight: 400;
 }
 
 .area__title a:hover {
@@ -1454,7 +1477,199 @@ main:focus {
   animation: swim 5s ease-in-out infinite alternate;
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* Motion. Only transform, translate and opacity, so the browser can run it off the main thread.
+   Everything is in place without it: with reduced motion, in print and in browsers without support. */
+
+.section--deep {
+  overflow-x: clip;
+}
+
+.button--primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.button--primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgb(255 255 255 / 0.55) 50%, transparent 70%);
+  translate: -110% 0;
+  pointer-events: none;
+}
+
+.button--primary:hover::after {
+  translate: 110% 0;
+  transition: translate 0.6s ease;
+}
+
+.member-card .avatar {
+  transition:
+    rotate 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+    scale 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.member-card:hover .avatar {
+  rotate: -10deg;
+  scale: 1.1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: the text rises, the highlight is drawn and the boat sails in. The heading itself is visible right away. */
+  .hero .eyebrow,
+  .hero__lead,
+  .hero .actions {
+    animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .hero__lead {
+    animation-delay: 0.12s;
+  }
+
+  .hero .actions {
+    animation-delay: 0.24s;
+  }
+
+  .hero__title span {
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    animation: highlight 0.9s 0.4s cubic-bezier(0.6, 0, 0.2, 1) forwards;
+  }
+
+  .eyebrow::before {
+    animation: pulse 2.4s ease-in-out 1.2s infinite;
+  }
+
+  .sea__boat {
+    animation: sail-in 2.4s cubic-bezier(0.15, 0.6, 0.25, 1) both;
+  }
+
+  /* Pages cross-fade, the header stays put. */
+  @view-transition {
+    navigation: auto;
+  }
+
+  .site-header {
+    view-transition-name: site-header;
+  }
+
+  ::view-transition-old(root) {
+    animation: page-out 0.18s ease-in both;
+  }
+
+  ::view-transition-new(root) {
+    animation: page-in 0.4s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  /* Content slides in while you scroll, and the shark swims along. No JavaScript involved. */
+  @supports (animation-timeline: view()) {
+    .section__head,
+    .point,
+    .area,
+    .step,
+    .member-card,
+    .problems__list li,
+    .problems__closing,
+    .disciplines__item,
+    .directory__item,
+    .faq__item,
+    .strike-list li,
+    .note,
+    .mail-card,
+    .expertise__grid > div,
+    .profile__contact {
+      animation: reveal linear both;
+      animation-timeline: view();
+      /* Done by the time the element has entered, so nothing is still see-through while you read it. */
+      animation-range: entry 0% entry 70%;
+    }
+
+    :is(.crew-grid, .directory, .areas, .points, .steps, .problems__list, .disciplines) > :nth-child(3n + 2) {
+      animation-range: entry 10% entry 85%;
+    }
+
+    :is(.crew-grid, .directory, .areas, .points, .steps, .problems__list, .disciplines) > :nth-child(3n) {
+      animation-range: entry 20% entry 100%;
+    }
+
+    .problems__shark {
+      animation: shark linear both;
+      animation-timeline: view();
+      animation-range: cover 0% cover 100%;
+    }
+
+    .problems__shark img {
+      animation: wiggle 1.4s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 1.25rem;
+  }
+}
+
+@keyframes highlight {
+  to {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    scale: 1.45;
+  }
+}
+
+@keyframes sail-in {
+  from {
+    translate: 70vw 0;
+    rotate: 4deg;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    translate: 0 2.5rem;
+  }
+}
+
+/* Stays in the empty right part of the section, clear of the punchline. In cqi, because the section stops growing
+   on wide screens while the viewport doesn't. */
+@keyframes shark {
+  from {
+    translate: -15cqi 0;
+  }
+  to {
+    translate: 10cqi 0;
+  }
+}
+
+@keyframes wiggle {
+  to {
+    rotate: -3deg;
+    translate: 0 0.35rem;
+  }
+}
+
+@keyframes page-out {
+  to {
+    opacity: 0;
+    translate: 0 -0.5rem;
+  }
+}
+
+@keyframes page-in {
+  from {
+    opacity: 0;
+    translate: 0 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce), print {
   *,
   *::before,
   *::after {

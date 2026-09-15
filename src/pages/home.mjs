@@ -112,11 +112,11 @@ const copy = {
   },
 };
 
-export const illustration = (name, width, height, alt = "", className = "") =>
+export const illustration = (name, width, height, alt = "", className = "", { lazy = false } = {}) =>
   html`<picture class="${className}">
     <source type="image/avif" srcset="/images/${name}.avif">
     <source type="image/webp" srcset="/images/${name}.webp">
-    <img src="/images/${name}.png" alt="${alt}" width="${width}" height="${height}" decoding="async">
+    <img src="/images/${name}.png" alt="${alt}" width="${width}" height="${height}" decoding="async"${lazy ? html` loading="lazy"` : ""}>
   </picture>`;
 
 const testimonialsSection = (lang, ctx, title) =>
@@ -188,7 +188,7 @@ export const render = (lang, ctx) => {
           <p class="problems__punchline">${c.problems.closing[0]} <span>${c.problems.closing[1]}</span></p>
           <a class="button button--primary" href="${pagePath("contact", lang)}" data-event="CTA: contact">${c.problems.cta}</a>
         </div>
-        ${illustration("shark", 217, 104, "", "problems__shark")}
+        ${illustration("shark", 217, 104, "", "problems__shark", { lazy: true })}
       </div>
     </section>
 

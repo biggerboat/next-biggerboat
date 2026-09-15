@@ -26,7 +26,9 @@ const minifyCss = (css) =>
   css
     .replace(/\/\*[\s\S]*?\*\//g, "")
     .replace(/\s+/g, " ")
-    .replace(/\s*([{}:;,>])\s*/g, "$1")
+    // No whitespace is removed before a colon: `.section :focus-visible` and `.section:focus-visible` differ.
+    .replace(/\s*([{};,>])\s*/g, "$1")
+    .replace(/:\s+/g, ":")
     .replace(/;}/g, "}")
     .trim();
 
