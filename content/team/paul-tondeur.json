@@ -1,0 +1,36 @@
+{
+  "name": "Paul Tondeur",
+  "role": {
+    "en": "AI product builder & co-founder of WBSO.ai",
+    "nl": "AI-productbouwer & medeoprichter van WBSO.ai"
+  },
+  "shortBio": {
+    "en": "AI-first builder of products and ventures, bridging tech and usability.",
+    "nl": "Bouwt AI-first producten en ventures, op het snijvlak van techniek en gebruiksvriendelijkheid."
+  },
+  "bio": {
+    "en": [
+      "Co-founder of [WBSO.ai](https://wbso.ai/), where developers hand off their [WBSO hour tracking](https://wbso.ai/wbso-administratie/voor-developers).",
+      "AI-first innovator bridging tech and usability, passionate about building products and ventures with real-world impact."
+    ],
+    "nl": [
+      "Medeoprichter van [WBSO.ai](https://wbso.ai/), waar developers hun [WBSO-urenregistratie](https://wbso.ai/wbso-administratie/voor-developers) uitbesteden.",
+      "AI-first innovator die techniek en gebruiksvriendelijkheid verbindt, met een passie voor het bouwen van producten en ventures met echte impact."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["ai", "product", "frontend", "backend", "creative"],
+  "technologies": ["React", "Next.js", "Node.js"],
+  "expertise": ["AI development", "Prompt engineering", "Rapid prototyping", "Creative coding"],
+  "email": "paul@paultondeur.nl",
+  "phone": "+31624255862",
+  "phoneDisplay": "+31 6 24 25 58 62",
+  "linkedin": "https://www.linkedin.com/in/paultondeur/",
+  "website": "https://www.paultondeur.com/",
+  "x": "https://x.com/PaulTondeur",
+  "photo": null,
+  "available": true,
+  "todo": "Ask Paul for years of experience, location and a photo."
+}

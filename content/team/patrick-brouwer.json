@@ -1,0 +1,36 @@
+{
+  "name": "Patrick Brouwer",
+  "role": {
+    "en": "Creative frontend developer & founder of Spirit",
+    "nl": "Creative frontend developer & oprichter van Spirit"
+  },
+  "shortBio": {
+    "en": "Creative developer with a special love for frontend development, animation and WebGL.",
+    "nl": "Creative developer met een speciale liefde voor frontend development, animatie en WebGL."
+  },
+  "bio": {
+    "en": [
+      "An experienced and passionate creative developer, with a special love for frontend development and keeping up with the latest trends and technology.",
+      "Founder of Spirit, animation tooling for the web."
+    ],
+    "nl": [
+      "Een ervaren en gepassioneerde creative developer, met een speciale liefde voor frontend development en altijd bij met de nieuwste trends en technologie.",
+      "Oprichter van Spirit, animatietooling voor het web."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["creative", "frontend"],
+  "technologies": ["JavaScript", "React", "Redux", "Node.js", "WebGL", "GSAP", "Docker", "Webpack", "Rollup", "PostCSS", "Backbone.js"],
+  "expertise": ["Animation", "Test-driven development"],
+  "email": "patrick@inlet.nl",
+  "phone": "+31624167158",
+  "phoneDisplay": "+31 6 24 16 71 58",
+  "linkedin": "https://nl.linkedin.com/in/pbrouwer",
+  "website": "https://www.inlet.nl",
+  "x": "https://x.com/patrickbrouwer",
+  "photo": null,
+  "available": true,
+  "todo": "Ask Patrick for years of experience, location and a photo."
+}

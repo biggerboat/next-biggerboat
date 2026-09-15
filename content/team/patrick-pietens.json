@@ -1,0 +1,34 @@
+{
+  "name": "Patrick Pietens",
+  "role": {
+    "en": "Creative frontend developer",
+    "nl": "Creative frontend developer"
+  },
+  "shortBio": {
+    "en": "Creative coder and game designer, from native iOS apps to the web.",
+    "nl": "Creative coder en gamedesigner, van native iOS-apps tot het web."
+  },
+  "bio": {
+    "en": [
+      "Creative frontend coder, game designer, audio junkie, pro gamer, programmer, Mac zealot, movie addict, Nintendo fanboy, longboarder, snowboarder, Counter-Strike player, open source supporter and indie rock listener."
+    ],
+    "nl": [
+      "Creative frontend coder, gamedesigner, audiojunkie, pro-gamer, programmeur, Mac-fanaat, filmverslaafde, Nintendo-fanboy, longboarder, snowboarder, Counter-Strike-speler, open source-supporter en indierockliefhebber."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["frontend", "creative", "mobile", "games"],
+  "technologies": ["JavaScript", "HTML", "CSS", "Node.js", "AngularJS", "Backbone.js", "WordPress", "Objective-C", "ActionScript 3", "Adobe AIR"],
+  "expertise": ["Native iPhone and iPad development", "Game design"],
+  "email": "hello@patrickpietens.com",
+  "phone": null,
+  "phoneDisplay": null,
+  "linkedin": "https://www.linkedin.com/in/patrickpietens",
+  "website": "http://patrickpietens.com",
+  "x": "https://x.com/flashaddict",
+  "photo": null,
+  "available": true,
+  "todo": "Technologies are from an old profile. Ask Patrick for an up to date list, years of experience, location and a photo."
+}

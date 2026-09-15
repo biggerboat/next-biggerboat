@@ -1,0 +1,34 @@
+{
+  "name": "Daniël Zwijnenburg",
+  "role": {
+    "en": "Ruby, Rails & Elixir developer",
+    "nl": "Ruby-, Rails- & Elixir-developer"
+  },
+  "shortBio": {
+    "en": "Backend developer who cares about clean code, test-driven development and continuous delivery.",
+    "nl": "Backenddeveloper die hecht aan clean code, test-driven development en continuous delivery."
+  },
+  "bio": {
+    "en": [
+      "Strong focus on agile, collaboration and communication. Passionate about clean code, test-driven development, Ruby, Rails and JavaScript."
+    ],
+    "nl": [
+      "Sterke focus op agile werken, samenwerking en communicatie. Gepassioneerd door clean code, test-driven development, Ruby, Rails en JavaScript."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["backend", "engineering"],
+  "technologies": ["Ruby", "Rails", "Elixir", "Phoenix", "JavaScript", "AWS"],
+  "expertise": ["Test-driven development", "Clean code", "Continuous integration & deployment", "Agile"],
+  "email": "samenwerken@danielzwijnenburg.nl",
+  "phone": "+31634452858",
+  "phoneDisplay": "+31 6 34 45 28 58",
+  "linkedin": "https://nl.linkedin.com/in/danielzwijnenburg",
+  "website": "http://www.danielzwijnenburg.nl",
+  "x": "https://x.com/DNLZW",
+  "photo": null,
+  "available": true,
+  "todo": "Ask Daniël for years of experience, location and a photo."
+}

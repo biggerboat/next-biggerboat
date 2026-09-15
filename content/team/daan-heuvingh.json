@@ -1,0 +1,34 @@
+{
+  "name": "Daan Heuvingh",
+  "role": {
+    "en": "Creative all-round developer",
+    "nl": "Creatieve allround developer"
+  },
+  "shortBio": {
+    "en": "All-round developer with a strong background in game design and clean code.",
+    "nl": "Allround developer met een sterke achtergrond in gamedesign en clean code."
+  },
+  "bio": {
+    "en": [
+      "A creative all-round developer with a strong background in game design and clean code. Loves working on creative, game or multimedia projects with teams of highly motivated professionals."
+    ],
+    "nl": [
+      "Een creatieve allround developer met een sterke achtergrond in gamedesign en clean code. Werkt het liefst aan creatieve, game- of multimediaprojecten, samen met teams van zeer gemotiveerde professionals."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["creative", "frontend", "backend", "games", "ux"],
+  "technologies": ["JavaScript", "React", "Three.js", "HTML", "CSS", "SCSS", "PHP", "Java"],
+  "expertise": ["Interaction design", "Game design", "Project management"],
+  "email": "daanheuvingh@gmail.com",
+  "phone": "+31642120021",
+  "phoneDisplay": "+31 6 42 12 00 21",
+  "linkedin": "https://www.linkedin.com/in/daan-heuvingh-200a9a3/",
+  "website": "https://daanheuvingh.com",
+  "x": null,
+  "photo": null,
+  "available": true,
+  "todo": "Ask Daan for years of experience, location and a photo."
+}

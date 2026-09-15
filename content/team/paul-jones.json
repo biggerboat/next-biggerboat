@@ -1,0 +1,34 @@
+{
+  "name": "Paul Jones",
+  "role": {
+    "en": "Frontend developer",
+    "nl": "Frontend developer"
+  },
+  "shortBio": {
+    "en": "Frontend developer with a background in high-traffic systems, ad tech and games.",
+    "nl": "Frontend developer met een achtergrond in high-traffic systemen, advertentietechnologie en games."
+  },
+  "bio": {
+    "en": [
+      "Frontend developer with experience in high-traffic systems and APIs, Google DFP and the IMA SDK, games and more. A long-time ActionScript programmer."
+    ],
+    "nl": [
+      "Frontend developer met ervaring in high-traffic systemen en API's, Google DFP en de IMA SDK, games en meer. Programmeert al heel lang in ActionScript."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["frontend", "games"],
+  "technologies": ["JavaScript", "AngularJS", "ActionScript 3", "Google DFP", "IMA SDK", "jQuery"],
+  "expertise": ["High-traffic systems", "Games"],
+  "email": "thepauljones@gmail.com",
+  "phone": "+31684161914",
+  "phoneDisplay": "+31 6 84 16 19 14",
+  "linkedin": "https://www.linkedin.com/pub/paul-jones/1a/607/265",
+  "website": "http://www.paulwjones.com",
+  "x": null,
+  "photo": null,
+  "available": true,
+  "todo": "The old profile said '8 years experience' and was written years ago, so that number was left out. Ask Paul for an up to date bio, technologies, years of experience, location and a photo."
+}

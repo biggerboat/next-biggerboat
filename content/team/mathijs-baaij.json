@@ -1,0 +1,34 @@
+{
+  "name": "Mathijs Baaij",
+  "role": {
+    "en": "Frontend developer & tech lead",
+    "nl": "Frontend developer & tech lead"
+  },
+  "shortBio": {
+    "en": "Frontend developer and tech lead on large-scale websites, web apps and mobile apps.",
+    "nl": "Frontend developer en tech lead voor grote websites, webapps en mobiele apps."
+  },
+  "bio": {
+    "en": [
+      "As a frontend developer and tech lead I have worked on large-scale websites, campaign websites, web apps and mobile apps. I enjoy working on interesting projects within a team of enthusiasts."
+    ],
+    "nl": [
+      "Als frontend developer en tech lead heb ik gewerkt aan grote websites, campagnesites, webapps en mobiele apps. Ik werk graag aan interessante projecten, in een team vol enthousiastelingen."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["frontend", "leadership", "mobile"],
+  "technologies": ["JavaScript", "React", "Redux", "React Native", "GraphQL", "Webpack", "HTML", "CSS"],
+  "expertise": ["Tech lead", "Scrum", "Kanban", "Soft skills"],
+  "email": "info@mathijsbaaij.nl",
+  "phone": "+31617876700",
+  "phoneDisplay": "+31 6 17 87 67 00",
+  "linkedin": "https://www.linkedin.com/in/mathijsbaaij",
+  "website": "http://www.mathijsbaaij.nl/",
+  "x": null,
+  "photo": null,
+  "available": true,
+  "todo": "Ask Mathijs for years of experience, location and a photo."
+}
