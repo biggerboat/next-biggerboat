@@ -563,16 +563,23 @@ main:focus {
 }
 
 .sea {
+  --boat-width: clamp(9rem, 26vw, 22rem);
+  /* The keel sits 42px above the bottom of the sea, just under the trough of the back wave at 47px (the wave starts
+     14px up and its trough is 15px below the top of its 48px strip), so the water laps the lower hull. Higher and
+     the boat floats on top of the waves, lower and it sinks into them. boat.png has 35px of empty space under the
+     keel for its 479px width. The sea grows by as much as the boat rises, so the mast keeps its distance from the
+     buttons. */
+  --boat-bottom: calc(42px - var(--boat-width) * 35 / 479);
   position: relative;
-  height: clamp(6.5rem, 16vw, 13rem);
+  height: calc(clamp(6.5rem, 16vw, 13rem) + var(--boat-bottom) - 0.6rem);
   margin-top: clamp(0.5rem, 2vw, 1rem);
 }
 
 .sea__boat {
   position: absolute;
-  bottom: 0.6rem;
+  bottom: var(--boat-bottom);
   right: max(var(--gutter), 8%);
-  width: clamp(9rem, 26vw, 22rem);
+  width: var(--boat-width);
   transform-origin: 50% 85%;
 }
 
