@@ -15,7 +15,7 @@
   --ink-soft: #45413a;
   --yellow: #f2c230;
   --pink: #d93b6f;
-  --sea: #5cdaaa;
+  --sea: #51d2a0;
   --deep: #0e3631;
   --on-deep: #f6f1e6;
   --on-deep-soft: #cfe3dc;
@@ -418,9 +418,15 @@ main:focus {
   background: var(--paper-2);
 }
 
+/* The same textured water as under the waves, so the sea doesn't change where the waves end. */
 .section--sea,
 .band--sea {
-  background: var(--sea);
+  background: var(--sea) url("/images/water.png");
+  background-image: image-set(
+    url("/images/water.avif") type("image/avif"),
+    url("/images/water.webp") type("image/webp"),
+    url("/images/water.png") type("image/png")
+  );
 }
 
 .section--deep {
