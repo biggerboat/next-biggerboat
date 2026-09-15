@@ -1,0 +1,36 @@
+{
+  "name": "Jankees van Woezik",
+  "role": {
+    "en": "Full-stack developer & co-founder of WBSO.ai",
+    "nl": "Full-stack developer & medeoprichter van WBSO.ai"
+  },
+  "shortBio": {
+    "en": "Frontend and backend developer with a passion for well-written, maintainable and tested code.",
+    "nl": "Frontend- en backenddeveloper met een passie voor goed geschreven, onderhoudbare en geteste code."
+  },
+  "bio": {
+    "en": [
+      "Co-founder of [WBSO.ai](https://wbso.ai/), which helps high-tech and software companies with their [WBSO application](https://wbso.ai/wbso-aanvragen).",
+      "A code-cracking, mathematics-loving, award-winning freelance developer; frontend and backend, with a passion for well-written, maintainable and tested code."
+    ],
+    "nl": [
+      "Medeoprichter van [WBSO.ai](https://wbso.ai/), dat hightech- en softwarebedrijven helpt met hun [WBSO-aanvraag](https://wbso.ai/wbso-aanvragen).",
+      "Een codekrakende, wiskunde-minnende, awardwinnende freelance developer; frontend en backend, met een passie voor goed geschreven, onderhoudbare en geteste code."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["frontend", "backend", "engineering"],
+  "technologies": ["React", "Vue", "Next.js", "Tailwind", "JavaScript", "HTML", "Ruby", "Rails"],
+  "expertise": ["Maintainable, tested code"],
+  "email": "mail@jankeesvw.com",
+  "phone": "+31644924083",
+  "phoneDisplay": "+31 6 44 92 40 83",
+  "linkedin": "https://www.linkedin.com/in/jankeesvanwoezik/",
+  "website": "https://jankeesvw.com/",
+  "x": "https://x.com/jankeesvw",
+  "photo": null,
+  "available": true,
+  "todo": "Ask Jankees for years of experience, location and a photo."
+}

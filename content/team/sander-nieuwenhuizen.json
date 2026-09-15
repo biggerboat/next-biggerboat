@@ -1,0 +1,36 @@
+{
+  "name": "Sander Nieuwenhuizen",
+  "role": {
+    "en": "Product strategist, CTO & CPO",
+    "nl": "Productstrateeg, CTO & CPO"
+  },
+  "shortBio": {
+    "en": "Founder, strategist, product owner, programmer and coach who helps ventures set and reach their goals.",
+    "nl": "Oprichter, strateeg, product owner, programmeur en coach die ventures helpt hun doelen te bepalen en te halen."
+  },
+  "bio": {
+    "en": [
+      "My goal is to make you succeed with your venture. I have a broad interest and skill set: founder, visionary, strategist, product owner, programmer, coach and trainer.",
+      "I'm especially driven to help you set and execute goals that are aligned with your vision. Not sure what your vision is? No problem. Helping you to a crystal-clear vision and strategy is my number one priority."
+    ],
+    "nl": [
+      "Mijn doel is dat jouw onderneming slaagt. Ik heb een brede interesse en ervaring: oprichter, visionair, strateeg, product owner, programmeur, coach en trainer.",
+      "Ik help je vooral graag om doelen te bepalen en uit te voeren die passen bij jouw visie. Weet je nog niet precies wat die visie is? Geen probleem. Je helpen aan een glasheldere visie en strategie is mijn eerste prioriteit."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["product", "leadership", "coaching"],
+  "technologies": [],
+  "expertise": ["Vision", "Strategy", "Coaching", "Product ownership", "CTO", "CPO"],
+  "email": "sander@sandernieuwenhuizen.nl",
+  "phone": null,
+  "phoneDisplay": null,
+  "linkedin": "https://www.linkedin.com/in/sandernieuwenhuizen",
+  "website": null,
+  "x": "https://x.com/munkius",
+  "photo": null,
+  "available": true,
+  "todo": "Ask Sander for years of experience, technologies, location and a photo."
+}

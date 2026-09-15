@@ -1,0 +1,16 @@
+{
+  "name": "biggerboat",
+  "private": true,
+  "type": "module",
+  "description": "The website of biggerboat.nl",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "check": "node src/build.mjs && node scripts/check.mjs",
+    "images": "node scripts/images.mjs",
+    "og": "node scripts/og.mjs"
+  }
+}

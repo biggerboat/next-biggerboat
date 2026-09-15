@@ -1,0 +1,36 @@
+{
+  "name": "Marco Alting",
+  "role": {
+    "en": "Creative realtime 3D developer & senior frontend developer",
+    "nl": "Creative realtime 3D-developer & senior frontend developer"
+  },
+  "shortBio": {
+    "en": "Builds realtime 3D experiences and games in Unreal Engine, and still takes on senior frontend work.",
+    "nl": "Bouwt realtime 3D-ervaringen en games in Unreal Engine, en doet daarnaast nog steeds senior frontendwerk."
+  },
+  "bio": {
+    "en": [
+      "Senior creative realtime 3D developer with a passion for game design and development using Unreal Engine, C++ and Blueprints. Also still doing projects as a senior frontend developer, including work as a senior team lead.",
+      "Plays a lot of padel in his spare time, and occasionally sings and plays guitar."
+    ],
+    "nl": [
+      "Senior creative realtime 3D-developer met een passie voor gamedesign en -ontwikkeling in Unreal Engine, C++ en Blueprints. Doet daarnaast nog steeds projecten als senior frontend developer, ook als senior teamlead.",
+      "Speelt in zijn vrije tijd veel padel, en zingt en speelt af en toe gitaar."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["games", "ai", "frontend", "backend", "leadership", "engineering"],
+  "technologies": ["Unreal Engine", "C++", "Blueprints", "Blender", "Python", "React", "TypeScript", "CI/CD"],
+  "expertise": ["AI development", "Senior team lead"],
+  "email": "marco.alting@gmail.com",
+  "phone": "+31651176037",
+  "phoneDisplay": "06 51 17 60 37",
+  "linkedin": "https://nl.linkedin.com/in/marcoalting",
+  "website": null,
+  "x": null,
+  "photo": null,
+  "available": true,
+  "todo": "Ask Marco for years of experience, location and a photo."
+}

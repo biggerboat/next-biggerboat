@@ -1,0 +1,36 @@
+{
+  "name": "Berend Weij",
+  "role": {
+    "en": "Interaction designer & developer, owner of Studio Zoetekauw",
+    "nl": "Interaction designer & developer, eigenaar van Studio Zoetekauw"
+  },
+  "shortBio": {
+    "en": "Professional developer since 2000, specialised in serious games and interactive media.",
+    "nl": "Professioneel developer sinds 2000, gespecialiseerd in serious games en interactieve media."
+  },
+  "bio": {
+    "en": [
+      "Cross-functional expertise in project management, usability, interaction design and development for (educational) games, websites and other interactive media. Professional developer since 2000.",
+      "Previously founder and technical director of Mijn naam is Haas, currently owner of [Studio Zoetekauw](http://www.studiozoetekauw.nl/)."
+    ],
+    "nl": [
+      "Brede expertise in projectmanagement, usability, interaction design en development voor (educatieve) games, websites en andere interactieve media. Professioneel developer sinds 2000.",
+      "Eerder oprichter en technisch directeur van Mijn naam is Haas, nu eigenaar van [Studio Zoetekauw](http://www.studiozoetekauw.nl/)."
+    ]
+  },
+  "experienceYears": null,
+  "careerStartYear": 2000,
+  "location": null,
+  "disciplines": ["games", "ux", "frontend", "leadership", "coaching", "mobile"],
+  "technologies": ["JavaScript", "Unity", "C#", "Shaders", "Progressive web apps"],
+  "expertise": ["Serious games", "Interaction design", "Agile project and people management", "Scrum master", "Teaching, coaching and workshops"],
+  "email": "berend@studiozoetekauw.nl",
+  "phone": "+31614448973",
+  "phoneDisplay": "+31 6 14 44 89 73",
+  "linkedin": "https://nl.linkedin.com/in/experiencedesigner",
+  "website": "http://www.studiozoetekauw.nl/",
+  "x": null,
+  "photo": null,
+  "available": true,
+  "todo": "Ask Berend for location and a photo."
+}

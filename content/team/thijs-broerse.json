@@ -1,0 +1,36 @@
+{
+  "name": "Thijs Broerse",
+  "role": {
+    "en": "Frontend lead & technical director",
+    "nl": "Frontend lead & technical director"
+  },
+  "shortBio": {
+    "en": "Frontend and full-stack expert who builds robust web applications and leads international teams.",
+    "nl": "Frontend- en full-stack-expert die robuuste webapplicaties bouwt en internationale teams leidt."
+  },
+  "bio": {
+    "en": [
+      "A frontend and full-stack expert with 20+ years of experience in web development and leadership.",
+      "I specialise in crafting robust web applications and leading international teams to success, with a track record of contributing to many award-winning projects."
+    ],
+    "nl": [
+      "Frontend- en full-stack-expert met meer dan 20 jaar ervaring in webdevelopment en leiderschap.",
+      "Ik ben gespecialiseerd in het bouwen van robuuste webapplicaties en het succesvol leiden van internationale teams, en heb bijgedragen aan veel awardwinnende projecten."
+    ]
+  },
+  "experienceYears": 20,
+  "careerStartYear": null,
+  "location": null,
+  "disciplines": ["frontend", "backend", "leadership", "architecture"],
+  "technologies": ["TypeScript", "React", "Vue", "Next.js", "Matrix"],
+  "expertise": ["Leadership", "Architecture", "Scrum master"],
+  "email": "thijs@tyz.nl",
+  "phone": "+31689936821",
+  "phoneDisplay": "+31 6 89 93 68 21",
+  "linkedin": "https://www.linkedin.com/in/tyz81",
+  "website": "https://www.tyz.nl/",
+  "x": "https://x.com/tyz",
+  "photo": null,
+  "available": true,
+  "todo": "Experience is '20+' from the old profile; replace with careerStartYear for an exact number. Add location and a photo."
+}
