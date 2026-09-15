@@ -556,6 +556,12 @@ main:focus {
   line-height: 1.5;
 }
 
+/* Keeps the buttons on top when the boat is thrown up in a storm. */
+.hero .actions {
+  position: relative;
+  z-index: 1;
+}
+
 .sea {
   position: relative;
   height: clamp(6.5rem, 16vw, 13rem);
@@ -567,6 +573,7 @@ main:focus {
   bottom: 0.6rem;
   right: max(var(--gutter), 8%);
   width: clamp(9rem, 26vw, 22rem);
+  transform-origin: 50% 85%;
 }
 
 .sea__boat img {
@@ -578,6 +585,9 @@ main:focus {
   left: -96px;
   right: 0;
   height: 48px;
+  transform-origin: bottom;
+  /* Decoration: taps on the hull go through to the boat. */
+  pointer-events: none;
   background: url("/images/background-wave.png") repeat-x;
   background-image: image-set(
     url("/images/background-wave.avif") type("image/avif"),
@@ -1562,6 +1572,8 @@ main:focus {
 
   .sea__boat {
     animation: sail-in 2.4s cubic-bezier(0.15, 0.6, 0.25, 1) both;
+    /* Try clicking it. */
+    cursor: pointer;
   }
 
   /* Pages cross-fade, the header stays put. */
